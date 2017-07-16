@@ -1,0 +1,114 @@
+@{
+    ViewData["Title"] = "Carrossel";
+}
+
+
+<h3>Catálogo</h3>
+
+<div id="my-carousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+        @{
+            var produtos = new [] 
+            {
+                new {Id = 1, Nome = "Sleep not found", Preco = 59.90},
+                new {Id = 2, Nome = "May the code be with you", Preco = 59.90},
+                new {Id = 3, Nome = "Rollback", Preco = 59.90},
+                new {Id = 4, Nome = "REST", Preco = 69.90},
+                new {Id = 5, Nome = "Design Patterns com Java", Preco = 69.90},
+                new {Id = 6, Nome = "Vire o jogo com Spring Framework", Preco = 69.90},
+                new {Id = 7, Nome = "Test-Driven Development", Preco = 69.90},
+                new {Id = 8, Nome = "iOS: Programe para iPhone e iPad", Preco = 69.90},
+                new {Id = 9, Nome = "Desenvolvimento de Jogos para Android", Preco = 69.90}
+            };
+        }
+
+
+        <div class="item active">
+
+            <div class="row">
+
+                @for(int i=0;i<4;i++){
+                    <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <img src="~/images/produtos/large_@(produtos[i].Id).jpg" />
+                        </div>
+                        <div class="panel-footer">
+                            <div>@(produtos[i].Nome)</div>
+                            <div>R$ @(produtos[i].Preco)</div>
+                            <div class="text-center">
+                                <!--@Html.ActionLink("Adicionar", "carrinho", "pedido")-->
+                                <a asp-action="carrinho">Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                }
+    
+            </div>
+
+
+        </div>
+
+        <div class="item">
+           <div class="row">
+
+                @for(int i=4;i<8;i++){
+                    <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <img src="~/images/produtos/large_@(produtos[i].Id).jpg" />
+                        </div>
+                        <div class="panel-footer">
+                            <div>@(produtos[i].Nome)</div>
+                            <div>R$ @(produtos[i].Preco)</div>
+                            <div class="text-center">
+                                <!--@Html.ActionLink("Adicionar", "carrinho", "pedido")-->
+                                <a asp-action="carrinho">Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                }
+    
+            </div>
+        </div>
+        <div class="item">
+            <div class="row">
+
+                @for(int i=8;i<9;i++){
+                    <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <img src="~/images/produtos/large_@(produtos[i].Id).jpg" />
+                        </div>
+                        <div class="panel-footer">
+                            <div>@(produtos[i].Nome)</div>
+                            <div>R$ @(produtos[i].Preco)</div>
+                            <div class="text-center">
+                                <!--@Html.ActionLink("Adicionar", "carrinho", "pedido")-->
+                                <a asp-action="carrinho">Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                }
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#my-carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>

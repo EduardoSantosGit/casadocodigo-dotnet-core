@@ -1,0 +1,8 @@
+/home/eduardo/projetos/dotnet/casadocodigo/bin/Debug/netcoreapp1.1/casadocodigo.deps.json
+/home/eduardo/projetos/dotnet/casadocodigo/bin/Debug/netcoreapp1.1/casadocodigo.runtimeconfig.json
+/home/eduardo/projetos/dotnet/casadocodigo/bin/Debug/netcoreapp1.1/casadocodigo.runtimeconfig.dev.json
+/home/eduardo/projetos/dotnet/casadocodigo/bin/Debug/netcoreapp1.1/casadocodigo.dll
+/home/eduardo/projetos/dotnet/casadocodigo/bin/Debug/netcoreapp1.1/casadocodigo.pdb
+/home/eduardo/projetos/dotnet/casadocodigo/obj/Debug/netcoreapp1.1/casadocodigo.AssemblyInfo.cs
+/home/eduardo/projetos/dotnet/casadocodigo/obj/Debug/netcoreapp1.1/casadocodigo.dll
+/home/eduardo/projetos/dotnet/casadocodigo/obj/Debug/netcoreapp1.1/casadocodigo.pdb
